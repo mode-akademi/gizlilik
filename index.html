@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- AVUKAT ONAYI BEKLİYOR — taslak 2026-10-30. KVKK aydınlatma metni güncellemesi (mevzuat denetimi, MOTOR_KULUBU/DENETIM_RAPORU.md). Yayından önce avukat okumalı. -->
+<!-- AVUKAT ONAYI BEKLİYOR — taslak. Metin, uygulama içi aydınlatma metninin (app/www/aydinlatma.js, sürüm 2026-11-11) birebir kopyasıdır; değişiklik önce uygulamada yapılır, sonra buraya aynen taşınır. -->
 <html lang="tr">
 <head>
 <meta charset="utf-8">
@@ -13,124 +13,119 @@
 <header><img src="logo.png" alt="M.O.D.E. Akademi logosu"><div><div class="k">M.O.D.E. Akademi</div><div class="t">Motosiklet sürüş eğitimi</div></div></header>
 
 <h1>Gizlilik Politikası ve Aydınlatma Metni</h1>
-<div class="mu">Son güncelleme: 11 Kasım 2026</div>
+<div class="mu">Sürüm 2026-11-11 · Son güncelleme: 11 Kasım 2026</div>
 <nav><a href="#veriler">Hangi veriler</a><a href="#amac">Amaç ve hukuki sebep</a><a href="#aktarim">Aktarım</a><a href="#sure">Saklama</a><a href="#haklar">Hakların</a><a href="acik-riza.html">Açık rıza</a><a href="kullanim-kosullari.html">Kullanım koşulları</a><a href="hesap-silme.html">Hesabını sil</a></nav>
 
-<div class="box">Bu metin, <b>M.O.D.E. Akademi – Motosiklet</b> mobil uygulamasını (Android paket adı <code>com.modeakademi.app</code>) kullanırken kişisel verilerinin nasıl işlendiğini anlatır. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) madde 10 ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca hazırlanmıştır. Bu metin bir onay metni değildir; yalnız seni bilgilendirir. İsteğe bağlı duyuru izni için ayrı bir <a href="acik-riza.html">açık rıza metni</a> vardır.</div>
+<h2>Bu metin ne?</h2>
+<p>Bu metin, <b>M.O.D.E. Akademi – Motosiklet</b> uygulamasını kullanırken kişisel verilerinin kim tarafından, hangi amaçla, hangi hukuki sebeple işlendiğini, kimlere aktarıldığını ve haklarını anlatır (6698 sayılı Kişisel Verilerin Korunması Kanunu, KVKK, madde 10). Bir onay metni değildir; yalnız seni bilgilendirir. İsteğe bağlı duyuru izni ayrı bir açık rıza ile istenir.</p>
 
-<h2>1. Veri sorumlusu</h2>
-<p><b>Veri sorumlusu:</b> Dündar Pekiner (M.O.D.E. Akademi), Türkiye<br>
-<b>İletişim ve KVKK başvuruları:</b> <a href="mailto:modeacademy35@gmail.com">modeacademy35@gmail.com</a></p>
-<!-- Unvan, açık adres ve (varsa) KEP adresi veri sorumlusu kararıyla eklenecek (kullanıcı kararı 2026-10-30: şimdilik açık adres yazılmaz). -->
-<p>Aynı bilgiler uygulamada <b>Profil › Künye ve iletişim</b> bölümünde de yer alır.</p>
+<h2>1. Veri sorumlusu ve veri işleyen</h2>
+<p><b>Veri sorumlusu:</b> Dündar Pekiner (M.O.D.E. Akademi), Türkiye. M.O.D.E. Akademi'nin kulüp sahibi olarak verilerinin hangi amaçla ve hangi araçlarla işleneceğine karar verir.</p>
+<p><b>İletişim ve KVKK başvuruları:</b> <a href="mailto:modeacademy35@gmail.com?subject=KVKK%20ba%C5%9Fvurusu">modeacademy35@gmail.com</a></p>
+<p><b>Veri işleyen:</b> Uygulamanın yazılımı, sunucu ayarları ve teknik bakımı, veri sorumlusu adına ve onun talimatıyla çalışan yazılım geliştiricisi tarafından yapılır. Geliştirici verilerini yalnız bu iş için, veri sorumlusunun talimatıyla işler; kendi amacı için kullanmaz.</p>
 
-<h2 id="veriler">2. Hangi verileri, hangi yolla topluyoruz?</h2>
-<p>Verilerin, uygulama üzerinden <b>elektronik ortamda</b>, senin girdiğin bilgilerden ve eğitimin sırasında eğitmenlerin girdiği kayıtlardan toplanır.</p>
-<table>
-<thead><tr><th>Veri kategorisi</th><th>İçerik</th><th>Kaynağı</th></tr></thead>
-<tbody>
-<tr><td>Kimlik</td><td>Ad soyad</td><td>Sen (hesap, ön kayıt) ya da Google ile girersen Google hesabın</td></tr>
-<tr><td>İletişim</td><td>E-posta, telefon, şehir</td><td>Sen (hesap, ön kayıt); Google ile girersen e-posta Google hesabından gelir</td></tr>
-<tr><td>Hesap güvenliği</td><td>Parola (geri çevrilemez özet/hash olarak saklanır; Google ile girersen parola tutulmaz), Google ile girersen Google hesap kimliğin ve profil resminin bağlantısı, giriş kayıtları</td><td>Sen, Google, sistem</td></tr>
-<tr><td>Başvuru bilgileri</td><td>Motor marka ve modeli, sürüş deneyimi süresi, daha önce eğitim alıp almadığın, kendini anlattığın metin, seçtiğin eğitim paketi, 18 yaşından büyük olduğuna dair beyanın, kullanım koşullarını kabul ettiğin tarih ve metin sürümü</td><td>Sen (hesap, ön kayıt)</td></tr>
-<tr><td>Eğitim kayıtları</td><td>Derslere davet ve katılım, yoklama, ders başında eğitmenin işaretlediği ekipman eksikleri (pantolon, ceket, bot, eldiven, kask), istasyon puanları, eğitmen gelişim notları, paket ve bölüm tamamlama onayları, sıra/önkoşul esnetme kayıtları (eğitmenin gerekçesiyle), rozetler, tekrar ders isteklerin (konu, isteğe bağlı notun, tercih ettiğin günler, eğitmenin yanıtı)</td><td>Eğitmenler, sen, sistem</td></tr>
-<tr><td>Güvenlik olay kayıtları</td><td>Eğitim sırasında yaşanan olayın türü ve kısa açıklaması (örneğin düşme, ekipman sorunu), alınan önlem</td><td>Eğitmenler</td></tr>
-<tr><td>Cihaz bildirim kimliği (isteğe bağlı)</td><td>Bildirimlere izin verirsen telefonuna özel bildirim adresi (Firebase Cloud Messaging); yalnız bildirim göndermek için tutulur, bildirimleri kapatınca, çıkış yapınca ya da hesabını silince silinir</td><td>Telefonun, sistem</td></tr>
-<tr><td>Görsel (isteğe bağlı)</td><td>Profil fotoğrafı (küçültülerek sunucuda saklanır; yalnız sen ve eğitmenler görür), kask avatarı ve yarış numarası</td><td>Sen</td></tr>
-<tr><td>Duyuru izni (isteğe bağlı)</td><td>Duyuru izni verip vermediğin, izni verdiğin ya da geri aldığın tarih ve onay metninin sürümü</td><td>Sen</td></tr>
-<tr><td>Teknik bağlantı verisi</td><td>Sunucuya, hava durumu hizmetine ve dokunduğunda açılan dış hizmetlere bağlanırken telefonunun IP adresi ve standart tarayıcı bilgileri; sunucu sağlayıcısının güvenlik ve hata kayıtları</td><td>Telefonun, sistem</td></tr>
-</tbody>
-</table>
-<p><b>Özel nitelikli kişisel veri</b> (sağlık, biyometrik veri vb.) <b>işlenmez.</b> Serbest metin alanlarında (ön kayıttaki tanıtım metni, gelişim notu, tekrar ders notu, olay kaydı) sağlık bilgisi yazılmaması için uyarı vardır; yine de yazılmış bir sağlık bilgisi fark edilirse silinir.</p>
-<p>Uygulama konumunu, rehberini, kamerayı ve mikrofonu <b>kullanmaz</b>. Reklam göstermez, reklam kimliği toplamaz, verilerini satmaz. Fotoğraf seçersen telefonun yalnız seçtiğin fotoğrafı uygulamaya verir. Uygulama, internetsiz çalışabilmek için verilerin bir kopyasını telefonunda da tutar; çıkış yaptığında kişisel kopyalar silinir, uygulamayı kaldırdığında tüm kopya silinir.</p>
+<h2 id="veriler">2. Hangi verileri, nasıl topluyoruz?</h2>
+<p>Verilerin uygulama üzerinden, elektronik ortamda toplanır: senin girdiklerinden, Google ile oturum açtığında Google'ın ilettiklerinden ve eğitimin sırasında eğitmenlerin girdiği kayıtlardan.</p>
+<table><thead>
+<tr><th>Veri kategorisi</th><th>İçerik</th><th>Kaynağı</th></tr></thead><tbody>
+<tr><td>Kimlik</td><td>Ad soyad</td><td>Google hesabın; ön kayıtta sen; eğitmen seni elle eklediyse eğitmen</td></tr>
+<tr><td>İletişim</td><td>E-posta adresi; telefon numarası ve şehir</td><td>E-posta Google hesabından; telefon ve şehir ön kayıtta sen; eğitmen seni elle eklediyse eğitmen (Gmail adresi, telefon)</td></tr>
+<tr><td>Hesap ve giriş</td><td>Uygulama hesap kimliği, Google hesap kimliği, profil resminin bağlantısı, giriş zamanları. Parola tutulmaz: uygulamaya yalnız Google hesabınla girilir.</td><td>Google, sistem</td></tr>
+<tr><td>Başvuru</td><td>Motor marka ve modeli, sürüş deneyimi süresi, daha önce eğitim alıp almadığın, kendini anlattığın metin, seçtiğin eğitim paketi</td><td>Sen (ön kayıt); eğitmen seni elle eklediyse eğitmen (motor bilgisi, paket)</td></tr>
+<tr><td>Onay kayıtları</td><td>18 yaşından büyük olduğuna dair beyan; kullanım koşullarının hangi sürümünü ne zaman kabul ettiğin ve bu metnin hangi sürümünü ne zaman okuduğunu belirttiğin; duyuru izni verme ya da geri alma tarihleri (sunucu saatiyle)</td><td>Sen, sistem</td></tr>
+<tr><td>Eğitim kayıtları</td><td>Ders davetleri ve yanıtların, yoklama, ders başında işaretlenen ekipman eksikleri (pantolon, ceket, bot, eldiven, kask), istasyon puanları, gelişim notları, paket ve bölüm onayları, sıra ve önkoşul esnetme kayıtları (eğitmenin gerekçesiyle), rozetler, tekrar ders isteklerin ve yanıtları</td><td>Eğitmenler, sen, sistem</td></tr>
+<tr><td>Güvenlik olay kaydı</td><td>Eğitim sırasında yaşanan olayın türü ve kısa açıklaması (ör. düşme, ekipman sorunu), alınan önlem</td><td>Eğitmenler</td></tr>
+<tr><td>Görsel (isteğe bağlı)</td><td>Profil fotoğrafı (küçültülerek saklanır), kask avatarı ve yarış numarası</td><td>Sen</td></tr>
+<tr><td>Cihaz bildirim kimliği (isteğe bağlı)</td><td>Bildirimlere izin verirsen telefonuna özel bildirim adresi</td><td>Telefonun (Firebase Cloud Messaging)</td></tr>
+<tr><td>Teknik bağlantı verisi</td><td>Sunucuya ve senin dokunduğun dış hizmetlere (YouTube, Haritalar) bağlanırken IP adresin ve standart cihaz/tarayıcı bilgileri; sunucu sağlayıcısının güvenlik ve hata kayıtları</td><td>Telefonun, sistem</td></tr>
+</tbody></table>
+<p><b>Özel nitelikli kişisel veri (sağlık, biyometrik veri vb.) işlenmez.</b> Serbest metin alanlarında sağlık bilgisi yazılmaması için uyarı vardır; yazılmış bir sağlık bilgisi fark edilirse silinir.</p>
+<p>Uygulama konumunu, rehberini, takvimini, kamerayı ve mikrofonu okumaz; reklam göstermez, reklam kimliği ve analiz verisi toplamaz, verilerini satmaz. İnternetsiz çalışabilmek için verilerinin bir kopyası telefonunda da durur; çıkış yaptığında kişisel kopyalar silinir.</p>
 
 <h2 id="amac">3. Amaçlar ve hukuki sebepler</h2>
-<table>
-<thead><tr><th>Amaç</th><th>Hukuki sebep (KVKK m.5)</th></tr></thead>
-<tbody>
-<tr><td>Hesabını açmak, giriş yapmanı sağlamak, doğrulama kodu ve hizmetle ilgili bildirimleri (ders daveti, onay, saat değişikliği, başvuru sonucu) göndermek</td><td>Sözleşmenin kurulması ve ifası (m.5/2-c)</td></tr>
-<tr><td>Ön kayıt başvurunu değerlendirmek, 18 yaş beyanını ve kullanım koşullarının kabulünü kayda almak, seninle iletişime geçmek, sana uygun eğitim paketini belirlemek</td><td>Sözleşmenin kurulması (m.5/2-c)</td></tr>
-<tr><td>Eğitimini planlamak ve yürütmek, puanlarını, gelişim notlarını, ekipman kontrolünü, tekrar ders isteklerini ve rozetlerini sana ve eğitmenine göstermek</td><td>Sözleşmenin ifası (m.5/2-c)</td></tr>
-<tr><td>Ders yerinin hava durumunu göstermek</td><td>Sözleşmenin ifası (m.5/2-c), meşru menfaat (m.5/2-f)</td></tr>
-<tr><td>Profilinde fotoğraf ya da kask avatarı göstermek (yalnız sen seçersen)</td><td>Sözleşmenin ifası (m.5/2-c): senin kullanmayı seçtiğin bir özellik</td></tr>
+<table><thead>
+<tr><th>Amaç</th><th>Hukuki sebep (KVKK m.5)</th></tr></thead><tbody>
+<tr><td>Hesabını açmak, Google ile girişini sağlamak, hizmetle ilgili bildirimleri (ders daveti, onay, saat değişikliği, başvuru sonucu) göstermek ve göndermek</td><td>Sözleşmenin kurulması ve ifası (m.5/2-c)</td></tr>
+<tr><td>Ön kayıt başvurunu değerlendirmek, 18 yaş beyanını ve kullanım koşullarının kabulünü kayda almak, seninle iletişime geçmek, sana uygun paketi belirlemek</td><td>Sözleşmenin kurulması (m.5/2-c)</td></tr>
+<tr><td>Eğitimini planlamak ve yürütmek; puanlarını, gelişim notlarını, ekipman kontrolünü, tekrar ders isteklerini ve rozetlerini sana ve eğitmenine göstermek</td><td>Sözleşmenin ifası (m.5/2-c)</td></tr>
+<tr><td>Ders yerinin hava durumunu göstermek</td><td>Sözleşmenin ifası (m.5/2-c)</td></tr>
+<tr><td>Profilinde fotoğraf ya da kask avatarı göstermek (yalnız sen seçersen)</td><td>Sözleşmenin ifası (m.5/2-c)</td></tr>
 <tr><td>Eğitimin bittikten ya da eğitmen seni arşive aldıktan sonra kaydını arşivde tutmak: yeniden gelirsen seni ve önceki eğitimini tanıyabilmek, eğitimle ilgili sonradan çıkabilecek soru ve uyuşmazlıklarda kayda dayanabilmek</td><td>Meşru menfaat (m.5/2-f); bir hakkın tesisi, kullanılması veya korunması (m.5/2-e)</td></tr>
-<tr><td>Eğitim güvenliği için olay kaydı tutmak, olası uyuşmazlıklarda hakların tesisi, kullanılması ve korunması</td><td>Meşru menfaat (m.5/2-f), bir hakkın tesisi, kullanılması veya korunması (m.5/2-e)</td></tr>
+<tr><td>Eğitim güvenliği için olay kaydı tutmak; olası uyuşmazlıklarda hakların korunması</td><td>Meşru menfaat (m.5/2-f); bir hakkın tesisi, kullanılması veya korunması (m.5/2-e)</td></tr>
 <tr><td>Kulübün kayıtlarını kaybetmemek için eğitmenin yedek almasına imkân vermek</td><td>Meşru menfaat (m.5/2-f)</td></tr>
 <tr><td>Hizmetin ve hesapların güvenliğini sağlamak, kötüye kullanımı önlemek, şikâyetleri incelemek</td><td>Meşru menfaat (m.5/2-f)</td></tr>
 <tr><td>Yetkili kurumların talepleri ve mevzuattan doğan saklama yükümlülükleri</td><td>Hukuki yükümlülük (m.5/2-ç)</td></tr>
-<tr><td>Kulüp etkinlikleri, yeni dönem ve kampanya duyurularını göndermek (yalnız izin verirsen)</td><td>Açık rıza (m.5/1) ve 6563 sayılı Kanun uyarınca ticari elektronik ileti onayı</td></tr>
-</tbody>
-</table>
-<p>Tablodaki son satır dışındaki amaçlar için <b>açık rızana ihtiyaç yoktur</b>. Duyuru izni <b>isteğe bağlıdır</b>: ön kayıt formunda ve Profil'de ayrı, işaretlenmemiş bir kutuyla istenir; vermemen eğitimini etkilemez; Profil › Duyuru izni bölümünden ya da bize yazarak istediğin zaman geri alabilirsin. Ayrıntılar: <a href="acik-riza.html">Açık rıza metni</a>. Şu an uygulama duyuru ya da kampanya iletisi göndermemektedir; ileride gönderilirse yalnız izin verenlere gönderilir. İleride bunların dışında bir işlem yapmak istersek (örneğin fotoğrafının tanıtımda kullanılması) ayrıca açık rıza isteriz.</p>
+<tr><td>Kulüp etkinlikleri, yeni dönem ve kampanya duyurularını göndermek (yalnız izin verirsen)</td><td>Açık rıza (m.5/1); 6563 sayılı Kanun uyarınca ticari elektronik ileti onayı</td></tr>
+</tbody></table>
+<p>Son satır dışındaki işlemler için açık rızan istenmez. Duyuru izni isteğe bağlıdır, vermemen eğitimini etkilemez ve Profil › Duyuru izni bölümünden istediğin zaman geri alınır. Uygulama şu an duyuru ya da kampanya iletisi göndermemektedir.</p>
 
 <h2 id="aktarim">4. Kimlere aktarılır?</h2>
-<p><b>Yurt içinde:</b> Verilerini M.O.D.E. Akademi eğitmenleri, yalnız eğitimini yürütmek için görür. Uygulamadaki diğer kullanıcılar yalnız adını ve kask avatarını görebilir (örneğin aynı derse katılanlar listesinde). Yasal bir zorunluluk olursa yalnız yetkili kamu kurum ve kuruluşlarıyla paylaşılır.</p>
-<p><b>Eğitmen yedeği:</b> Eğitmenler, kulübün kayıtlarını kaybetmemek için uygulamadaki <b>Yedek al</b> düğmesiyle, görme yetkileri olan kayıtların (adayların adı, e-postası, telefonu, başvuruları, eğitim kayıtları ve notları) bir kopyasını tek bir dosya olarak alabilir. Bu düğme yalnız eğitmen hesaplarında görünür; eğitmen yetkisi uygulamadan verilemez. Uygulama dosyayı oluşturmadan önce eğitmene dosyanın kişisel veri içerdiğini, güvenli bir yerde saklanması ve kimseyle paylaşılmaması gerektiğini gösterir ve onayını ister. Dosya eğitmenin seçtiği yere kaydedilir; eğitmen dosyayı bir bulut hizmetine kaydederse bu, o hizmetin bulunduğu ülkeye aktarım anlamına gelebilir. Bu nedenle yedek dosyası yalnız kulübün kayıtlarını korumak için, eğitmenin kendi cihazında ya da kulübe ait güvenli bir ortamda tutulur.</p>
-<!-- AVUKAT: eğitmen yedek dosyası için kulüp iç kuralı (nerede, ne kadar, kim) yazılı hâle getirilmeli. -->
-<p><b>Yurt dışında (KVKK m.9):</b> Hizmeti sunabilmek için şu hizmet sağlayıcılardan yararlanıyoruz:</p>
-<table>
-<thead><tr><th>Hizmet sağlayıcı</th><th>Ne için, hangi veri</th><th>Nerede</th></tr></thead>
-<tbody>
-<tr><td>Supabase Inc. (altyapısı Amazon Web Services), veri işleyen</td><td>Sunucu ve veritabanı: hesabın ve tüm uygulama verilerin, bağlantı sırasında IP adresin</td><td>İrlanda (Avrupa Birliği)</td></tr>
-<tr><td>Google LLC (Gmail), veri işleyen</td><td>Hesap doğrulama kodu ve şifre sıfırlama e-postalarının gönderilmesi: e-posta adresin ve e-posta içeriği. Bunların dışında e-posta gönderilmez.</td><td>ABD ve Google'ın veri merkezleri</td></tr>
-<tr><td>Google LLC (Google ile oturum açma)</td><td>İsteğe bağlıdır; yalnız "Google ile devam et"i seçersen kullanılır. Google kimliğini doğrular ve uygulamaya adını, e-posta adresini, profil resminin bağlantısını ve Google hesap kimliğini iletir; bunlar hesabınla birlikte saklanır. Google, bu uygulamaya giriş yaptığını öğrenir. Kişiler, takvim, fotoğraflar gibi başka Google verilerine erişmeyiz. E-posta ve parolayla da hesap açabilirsin.</td><td>ABD ve Google'ın veri merkezleri</td></tr>
-<tr><td>Google LLC (Firebase Cloud Messaging), veri işleyen</td><td>İsteğe bağlıdır; yalnız bildirimlere izin verirsen kullanılır. Ders daveti, onay gibi bildirimlerin uygulama kapalıyken telefonuna ulaşması için bildirim metni (adın, ders bilgisi ya da başvuru sonucu gibi bilgiler içerebilir) ve cihaz bildirim kimliği Google'a iletilir. Google Analytics ve reklam kimliği kapalıdır. Bildirimleri Profil › Telefon bildirimleri bölümünden ya da telefonunun ayarlarından istediğin zaman kapatabilirsin.</td><td>ABD ve Google'ın veri merkezleri</td></tr>
-<tr><td>Google LLC (YouTube)</td><td>Eğitim videolarının oynatılması. Uygulama, sen bir videoya dokunana kadar YouTube'a hiçbir bağlantı kurmaz. Dokunduğunda çerezsiz oynatıcı (youtube-nocookie.com) açılır; bu sırada cihazının IP adresi ve tarayıcı bilgileri Google'a ulaşır. Adın, e-postan ya da hesap bilgilerin gönderilmez.</td><td>ABD ve Google'ın veri merkezleri</td></tr>
-<tr><td>Open-Meteo (Open-Meteo.com, İsviçre)</td><td>Hava durumu: ders kartı açıldığında ders yerinin ya da sahanın koordinatı ve ders tarihi; eğitmen saha konumunu ayarlarken yazdığı şehir/ilçe adı. Bu isteklerle birlikte telefonunun IP adresi ve standart tarayıcı bilgileri de Open-Meteo'ya ulaşır. Adın, e-postan ya da hesap bilgilerin gönderilmez. Hava durumu verisi Open-Meteo.com'dan CC BY 4.0 lisansıyla alınır.</td><td>İsviçre (sunucu konumu sağlayıcı tarafından açıklanmıyor)</td></tr>
-<tr><td>Google LLC (Google Haritalar, Google Takvim)</td><td>Yalnız "Haritada aç" ya da "Takvimime ekle"ye dokunursan telefonunda Google'ın sayfası açılır: ders yerinin koordinatı; takvim için ders adı, tarihi, saati, yeri ve eğitmenin adı. Bu sayfalarda Google'ın kendi gizlilik politikası geçerlidir. Dokunmazsan hiçbir şey gönderilmez.</td><td>ABD ve Google'ın veri merkezleri</td></tr>
-<tr><td>Google LLC (Google Play uygulama içi güncelleme)</td><td>Uygulamanın yeni sürümü olup olmadığı telefonundaki Google Play hizmetleri üzerinden sorulur. Uygulama bu sorguya kişisel verini eklemez; Google Play'in kendi koşulları geçerlidir.</td><td>ABD ve Google'ın veri merkezleri</td></tr>
-</tbody>
-</table>
-<!-- AVUKAT ONAYI BEKLİYOR: Eski metindeki "Kurul'un ilan ettiği standart sözleşmelerle yapılır" cümlesi kanıtsız olduğu için kaldırıldı (DENETIM_RAPORU §2.4). Standart sözleşmeler imzalanıp imza tarihinden itibaren 5 iş günü içinde Kurum'a bildirildiğinde aşağıdaki yer tutucu, gerçek yöntem ve tarihlerle değiştirilmeli. -->
-<p><b>Yurt dışına aktarımın dayanağı:</b> Bu aktarımlar KVKK madde 9 ve Kişisel Verilerin Yurt Dışına Aktarılmasına İlişkin Usul ve Esaslar Hakkında Yönetmelik çerçevesinde yapılır. Yurt dışına aktarımlar için gerekli sözleşme ve bildirim süreci veri sorumlusu tarafından yürütülmektedir.</p>
+<p><b>Yurt içinde:</b> Verilerini M.O.D.E. Akademi eğitmenleri yalnız eğitimini yürütmek için görür. Uygulamadaki diğer kullanıcılar yalnız adını ve kask avatarını görebilir (örneğin aynı derse katılanlar listesinde). Veri işleyen yazılım geliştiricisi teknik bakım ve hata giderme için gerektiği ölçüde erişir. Yasal zorunluluk olursa yalnız yetkili kamu kurum ve kuruluşlarıyla paylaşılır.</p>
+<p><b>Eğitmen yedeği:</b> Eğitmenler kulübün kayıtlarını korumak için Yedek al düğmesiyle görme yetkileri olan kayıtların bir kopyasını tek dosya olarak alabilir; dosya eğitmenin cihazında ya da kulübe ait güvenli bir ortamda tutulur.</p>
+<p><b>Yurt dışına (KVKK m.9):</b> Hizmeti sunabilmek için şu sağlayıcılardan yararlanılır:</p>
+<table><thead>
+<tr><th>Sağlayıcı</th><th>Ne için, hangi veri</th><th>Nerede</th></tr></thead><tbody>
+<tr><td>Supabase Pte. Ltd. (Singapur; altyapısı Amazon Web Services), veri işleyen</td><td>Sunucu ve veritabanı: hesabın ve uygulamadaki bütün verilerin, bağlantı sırasında IP adresin, sunucunun güvenlik ve hata kayıtları</td><td>Veritabanı İrlanda'da (Avrupa Birliği, AWS eu-west-1). Supabase'in destek, güvenlik ve izleme için çalıştığı alt işleyenler aracılığıyla ABD'den erişilebilir.</td></tr>
+<tr><td>Google LLC (Google ile oturum açma)</td><td>Uygulamaya giriş yalnız Google hesabıyla yapılır. Kimliğini kendi Google hesabınla doğrudan Google'a doğrularsın; Google bu sırada kendi gizlilik koşullarına göre veri sorumlusudur. Uygulamaya yalnız adın, e-posta adresin, profil resminin bağlantısı ve Google hesap kimliğin iletilir; bunlar Supabase'de saklanır. Kişiler, takvim, fotoğraflar gibi başka Google verilerine erişilmez.</td><td>ABD ve Google'ın veri merkezleri</td></tr>
+<tr><td>Google LLC (Firebase Cloud Messaging), veri işleyen</td><td>İsteğe bağlı; yalnız bildirimlere izin verirsen. Cihaz bildirim kimliği, genel bir bildirim metni ("Yeni bir bildirimin var") ve uygulamanın doğru ekranı açması için bildirim ve konu kimlikleri (rastgele kimlik numaraları; Google bunlardan kim olduğunu bilemez); adın, ders ayrıntısı ya da başvuru sonucu gönderilmez, uygulama içinde gösterilir. Google Analytics ve reklam kimliği kapalıdır.</td><td>ABD ve Google'ın veri merkezleri</td></tr>
+<tr><td>Google LLC (YouTube)</td><td>Yalnız bir eğitim videosuna dokunursan çerezsiz oynatıcı açılır; IP adresin ve cihaz bilgileri Google'a ulaşır. Adın ve hesap bilgilerin gönderilmez.</td><td>ABD ve Google'ın veri merkezleri</td></tr>
+<tr><td>Google LLC (Google Haritalar)</td><td>Yalnız "Haritada aç"a dokunursan ders yerinin koordinatı Google Haritalar'da açılır.</td><td>ABD ve Google'ın veri merkezleri</td></tr>
+<tr><td>Google LLC (Google Play uygulama içi güncelleme)</td><td>Yeni sürüm olup olmadığı telefonundaki Google Play hizmetlerine sorulur; uygulama bu sorguya kişisel verini eklemez.</td><td>ABD ve Google'ın veri merkezleri</td></tr>
+<tr><td>Open-Meteo (Open-Meteo.com)</td><td>Hava durumu sunucumuz üzerinden alınır: Open-Meteo'ya yalnız ders yerinin koordinatı ve tarihi, eğitmenin saha ararken yazdığı şehir/ilçe adı gider. Telefonunun IP adresi, adın ve hesap bilgilerin gönderilmez; bu bilgiler kişisel veri içermez.</td><td>İsviçre</td></tr>
+<tr><td>Google LLC (Gmail), kulübün e-posta hesabı (geçici)</td><td>Kurumsal adres açılana kadar: bize e-postayla yazarsan (KVKK başvurusu, hesap silme talebi, sorun bildirimi) e-posta adresin ve yazdıkların kulübün Gmail hesabında saklanır. Uygulama sana e-posta göndermez (doğrulama ve şifre e-postası yoktur). Bu aktarımın dayanağı aşağıda: Gmail için standart sözleşme imzalanamadığı açıkça yazılmıştır.</td><td>ABD ve Google'ın veri merkezleri</td></tr>
+</tbody></table>
+<p><b>Yurt dışına aktarımın dayanağı:</b> Kişisel verilerin Türkiye dışına aktarılması KVKK madde 9'a tabidir. Kişisel Verileri Koruma Kurulu, Avrupa Birliği ülkeleri dahil hiçbir ülke için yeterlilik kararı vermemiştir. Bu nedenle sürekli aktarımlar için Kurul'un ilan ettiği standart sözleşmelerin kullanılması gerekir. Bu aktarımlar için açık rızana başvurmuyoruz, çünkü açık rıza yalnız arızi (tek seferlik, düzenli olmayan) aktarımlarda kullanılabilir.</p>
+<p><b>Supabase</b> (Supabase Pte. Ltd., Singapur; veritabanı İrlanda'da; destek, güvenlik ve izleme için ABD'deki alt işleyenler) ve <b>Google Firebase Cloud Messaging</b> (ABD): Yurt dışına aktarımlar için gerekli sözleşme ve bildirim süreci veri sorumlusu tarafından yürütülmektedir. Bu metnin tarihinde imzalanmış ve Kurul'a bildirilmiş bir sözleşme <b>yoktur</b>. Sözleşme imzalanınca bu bölümü tarihleriyle güncelleyeceğiz. <b>Gmail:</b> Kulübün geçici e-posta hesabı kişisel (tüketici) bir Gmail hesabıdır; Google bu hesap türü için Kurul'un standart sözleşmesini imzalama imkânı sunmaz. Bu nedenle Gmail'e yapılan aktarım için bugün KVKK madde 9'da sayılan bir güvence yoktur. Kurumsal adres (sunucusu Türkiye'de) açılınca başvuru ve silme talepleri oraya taşınacak ve Gmail kullanımı bırakılacaktır. Bu arada yurt dışına giden veriyi en aza indiriyoruz: telefon bildirimleri genel bir metinle gönderilir, ayrıntı uygulama içinde gösterilir; hava durumu sunucumuz üzerinden alınır, telefonunun IP adresi Open-Meteo'ya gitmez.</p>
+<p><b>Senin başlattığın paylaşımlar:</b> "Takvimime ekle"ye dokunursan ders adı, tarihi, saati, yeri ve eğitmenin adı telefonundaki takvim uygulamasına aktarılır; uygulama takvimini okumaz ve takvim izni istemez. Takvim uygulaman bu kaydı kendi hesabına (ör. Google Takvim) eşitleyebilir; bu durumda o hizmetin koşulları geçerlidir. Karneni paylaştığında da paylaşımı telefonunun paylaşım ekranından sen seçersin.</p>
 
 <h2 id="sure">5. Ne kadar süre saklanır?</h2>
-<table>
-<thead><tr><th>Kayıt</th><th>Saklama süresi</th></tr></thead>
-<tbody>
+<table><thead>
+<tr><th>Kayıt</th><th>Saklama süresi</th></tr></thead><tbody>
 <tr><td>Hesap, profil ve eğitim kayıtları (tekrar ders istekleri, ekipman kayıtları dahil)</td><td>Eğitimin sürdüğü ve hesabın açık olduğu sürece. Eğitimin bitip arşive alındığında aşağıdaki arşiv süresi uygulanır. Hesabını sildiğinde hemen silinir.</td></tr>
 <tr><td>Arşivdeki aday kaydı (eğitimi biten ya da eğitmenin arşive aldığı adayın hesap, profil, iletişim, başvuru ve eğitim kayıtları, bildirimleri)</td><td>Arşive alındığın tarihten itibaren 3 yıl. Bu sürede kayıtların silinmez; yeniden gelirsen eğitmenin seni tanır ve arşivden çıkarabilir, o zaman süre yeniden başlar. 3 yıl dolunca hesabın ve kayıtların bir sonraki aylık imhada silinir. Arşivdeyken de Profil › Hesabımı ve verilerimi sil ile hesabını hemen silebilirsin.</td></tr>
 <tr><td>Onay ve izin geçmişi (18 yaş beyanı, kullanım koşulları ve aydınlatma metni sürümleri, duyuru izni tarihleri)</td><td>Hesabın açık olduğu sürece. Hesabını sildiğinde hemen silinir.</td></tr>
 <tr><td>Bekleyen (karara bağlanmamış) ön kayıt başvurusu</td><td>Başvuru tarihinden itibaren 1 yıl; sonra silinir, istersen yeniden başvurabilirsin. Arşivdeki bir adayın yeni başvurusu arşiv süresince saklanır.</td></tr>
-<tr><td>Reddedilen ön kayıt başvurusu</td><td>Karar tarihinden itibaren 1 yıl (yeniden başvurunu değerlendirebilmek için), sonra silinir.</td></tr>
+<tr><td>Reddedilen ön kayıt başvurusu</td><td>Karar tarihinden itibaren 1 yıl, sonra silinir.</td></tr>
 <tr><td>Onaylanan ön kayıt başvurusu</td><td>Hesabın açık olduğu sürece; karar tarihinden 1 yıl sonra formdaki serbest metin ve iletişim bilgisi kopyaları silinir, paket ve karar tarihi kalır. Arşivdeysen arşiv süresi uygulanır.</td></tr>
 <tr><td>Uygulama içi bildirimler</td><td>Okunmuşsa 6 ay, okunmamışsa 1 yıl; arşivdeysen arşiv süresi sonunda; hesabını sildiğinde hemen.</td></tr>
-<tr><td>Güvenlik olay kayıtları</td><td>Olay tarihinden itibaren 10 yıl (Türk Borçlar Kanunu'ndaki genel zamanaşımı süresi). Hesabını silersen kayıt hesabınla bağlantısı kaldırılarak saklanır.</td></tr>
-<tr><td>Gönderilen e-postaların kaydı</td><td>Gönderimden itibaren en çok 6 ay. Hesabını sildiğinde sana ait kayıtlar hemen silinir.</td></tr>
-<tr><td>Dönem değişiminde alınan eğitim kaydı yedeği</td><td>Yedeğin alındığı tarihten itibaren en çok 3 yıl (yanlışlıkla sıfırlanan ya da önceki dönemdeki eğitim kaydını, yeniden gelirsen geri getirebilmek için); süre dolunca bir sonraki aylık imhada silinir. Hesabını sildiğinde hemen silinir.</td></tr>
-<tr><td>Cihaz bildirim kimliği</td><td>Bildirimleri kapattığında, çıkış yaptığında ya da hesabını sildiğinde silinir; geçersiz hâle gelen kimlik ilk gönderim denemesinde silinir.</td></tr>
-<tr><td>Eğitmenin aldığı yedek dosyası</td><td>Eğitmenin sorumluluğunda, kulübün kayıtlarını korumak için gerektiği sürece; yeni yedek alındığında eskisi silinir. Hesap silme talebin eğitmenlere de iletilir.</td></tr>
-</tbody>
-</table>
-<!-- AVUKAT / VERİ SORUMLUSU: tekrar ders istekleri (lesson_requests) için ayrı saklama süresi kararlaştırılırsa bu tabloya ve periyodik imhaya eklenmeli (DENETIM_RAPORU düzeltme #11). -->
-<p>Süresi dolan kayıtlar, Kişisel Verilerin Silinmesi, Yok Edilmesi veya Anonim Hale Getirilmesi Hakkında Yönetmelik uyarınca her ay yapılan periyodik imha ile silinir ya da anonim hâle getirilir.</p>
+<tr><td>Güvenlik olay kayıtları</td><td>Olay tarihinden itibaren 10 yıl (Türk Borçlar Kanunu genel zamanaşımı). Hesabını silersen kayıt adından ayrılarak saklanır.</td></tr>
+<tr><td>Dönem değişiminde alınan eğitim kaydı yedeği</td><td>Yedeğin alındığı tarihten itibaren en çok 3 yıl (yanlışlıkla sıfırlanan ya da önceki dönemdeki eğitim kaydını, yeniden gelirsen geri getirebilmek için); hesabını sildiğinde hemen.</td></tr>
+<tr><td>Cihaz bildirim kimliği</td><td>Bildirimleri kapattığında, çıkış yaptığında ya da hesabını sildiğinde silinir.</td></tr>
+<tr><td>Bize yazdığın e-postalar (başvuru, silme talebi, sorun bildirimi)</td><td>6 ay</td></tr>
+<tr><td>Eğitmenin aldığı yedek dosyası</td><td>Kulübün kayıtlarını korumak için gerektiği sürece; yeni yedek alınınca eskisi silinir.</td></tr>
+</tbody></table>
+<p>Kullanım koşullarını kabul etmeden bırakılan ve onaylanmamış hesaplar, son girişten 30 gün sonra silinir.</p>
+<p>Süresi dolan kayıtlar her ay yapılan periyodik imha ile silinir ya da anonim hâle getirilir (Kişisel Verilerin Silinmesi, Yok Edilmesi veya Anonim Hale Getirilmesi Hakkında Yönetmelik).</p>
 
-<h2>6. Güvenlik</h2>
-<p>Veriler şifreli bağlantıyla (HTTPS/TLS) taşınır. Sunucuda satır düzeyinde erişim kuralları vardır: her kullanıcı yalnız kendi verisine, eğitmenler yalnız yetkili oldukları kayıtlara erişebilir. Parolalar geri çevrilemez biçimde saklanır. Telefon bildirimleri kilit ekranında içeriği gizlenecek biçimde gönderilir; telefonunun bildirim ayarları da buna karar verir. Verilerine yetkisiz biri erişirse, durumu en kısa sürede sana ve Kişisel Verileri Koruma Kurulu'na bildiririz.</p>
+<h2 id="haklar">6. Hakların (KVKK madde 11)</h2>
+<p>Veri sorumlusuna başvurarak:</p><ul>
+<li>kişisel verinin işlenip işlenmediğini öğrenme, işlendiyse bilgi isteme,</li>
+<li>işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
+<li>yurt içinde ve yurt dışında aktarıldığı üçüncü kişileri bilme,</li>
+<li>eksik ya da yanlış işlenmişse düzeltilmesini isteme,</li>
+<li>KVKK madde 7'deki şartlar çerçevesinde silinmesini ya da yok edilmesini isteme,</li>
+<li>düzeltme ve silme işlemlerinin verinin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
+<li>münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonuç çıkmasına itiraz etme,</li>
+<li>kanuna aykırı işleme nedeniyle zarara uğrarsan zararın giderilmesini talep etme</li></ul><p>haklarına sahipsin.</p>
 
-<h2>7. Yaş sınırı</h2>
-<p>Uygulama 18 yaşından büyükler içindir. Hesap açarken ve ön kayıtta 18 yaşından büyük olduğunu beyan edersin. 18 yaşından küçükler hesap açmamalı ve ön kayıt yapmamalıdır. 18 yaşından küçük birinin verisinin işlendiğini fark edersek bu veriyi sileriz.</p>
+<h2 id="basvuru">7. Nasıl başvurursun?</h2>
+<p>Başvurunu uygulamada Google ile giriş yaptığın, sistemde kayıtlı e-posta adresinden <a href="mailto:modeacademy35@gmail.com?subject=KVKK%20ba%C5%9Fvurusu">modeacademy35@gmail.com</a> adresine gönderebilir ya da yazılı olarak iletebilirsin (Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ). Yazılı başvuru için posta adresimizi modeacademy35@gmail.com adresine yazarak öğrenebilirsin.</p>
+<p>Başvuruyu ayrıca güvenli elektronik imza ya da mobil imza ile imzaladığın bir e-postayla da yapabilirsin. Başvurunda adın soyadın, yazılı başvuruda imzan, tebligata esas yerleşim yeri ya da iş yeri adresin, varsa bildirime esas e-posta adresin, telefon numaran ve talebinin konusu yer almalıdır (Tebliğ m.5). Başvurun en geç 30 gün içinde, ücretsiz olarak sonuçlandırılır; işlem ayrıca bir maliyet gerektirirse Kurul'un belirlediği tarife uygulanabilir.</p>
+<p>Başvurun reddedilirse, cevabı yetersiz bulursan ya da süresinde cevap verilmezse, cevabı öğrendiğin tarihten itibaren 30 gün, her hâlde başvuru tarihinden itibaren 60 gün içinde Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsin (KVKK m.14).</p>
 
-<h2 id="haklar">8. Hakların (KVKK madde 11)</h2>
-<p>Dilediğin zaman bize başvurarak şunları isteyebilirsin:</p>
-<ul>
-<li>Kişisel verinin işlenip işlenmediğini öğrenmek, işlendiyse buna ilişkin bilgi istemek,</li>
-<li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenmek,</li>
-<li>Yurt içinde ya da yurt dışında aktarıldığı üçüncü kişileri bilmek,</li>
-<li>Eksik ya da yanlış işlenmişse düzeltilmesini istemek,</li>
-<li>KVKK madde 7'deki şartlar çerçevesinde silinmesini ya da yok edilmesini istemek,</li>
-<li>Düzeltme ve silme işlemlerinin, verinin aktarıldığı üçüncü kişilere bildirilmesini istemek,</li>
-<li>Münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonuç çıkmasına itiraz etmek,</li>
-<li>Kanuna aykırı işleme nedeniyle zarara uğramışsan zararın giderilmesini talep etmek.</li>
-</ul>
-<p><b>Nasıl başvurulur?</b> Başvurunu yazılı olarak ya da <b>hesabına kayıtlı e-posta adresinden</b> <a href="mailto:modeacademy35@gmail.com">modeacademy35@gmail.com</a> adresine gönderebilirsin (Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ). Başvurunda adın soyadın, iletişim bilgilerin ve talebin açıkça yer almalıdır. Başvurunu en geç <b>30 gün</b> içinde, ücretsiz olarak sonuçlandırırız. İşlem ayrıca bir maliyet gerektirirse Kurul'un belirlediği tarife uygulanabilir.</p>
-<p>Başvurun reddedilirse, cevabı yetersiz bulursan ya da süresinde cevap verilmezse, cevabı öğrendiğin tarihten itibaren 30 gün, her hâlde başvuru tarihinden itibaren 60 gün içinde <b>Kişisel Verileri Koruma Kurulu'na şikâyette</b> bulunabilirsin (KVKK m.14).</p>
+<h2 id="silme">8. Hesabını ve verilerini silmek</h2>
+<p>Uygulamada <b>Profil › Hesabımı ve verilerimi sil</b> ile hesabını ve kişisel kayıtlarını hemen silebilirsin (güvenlik olay kaydı varsa adından ayrılarak saklanır). Uygulamaya erişemiyorsan web sayfasından silme talebi gönderebilirsin: mode-akademi.github.io/gizlilik/hesap-silme.html. Uygulamanın Google hesabınla bağlantısını ayrıca Google Hesabı ayarlarındaki üçüncü taraf bağlantıları bölümünden kaldırabilirsin. Eğitmen hesabı, adaylar başka eğitmene devredilebilsin diye hemen silinmez: eğitmen <b>Profil › Hesap silme talebi</b> ile talebini uygulamadan iletir ve hesap en geç 30 gün içinde silinir.</p>
 
-<h2>9. Hesabını ve verilerini silmek</h2>
-<p>Uygulamada <b>Profil → Hesabımı ve verilerimi sil</b> adımlarıyla hesabını ve kişisel kayıtlarını hemen silebilirsin. Uygulamaya erişemiyorsan <a href="hesap-silme.html">web üzerinden silme talebi</a> gönderebilirsin. Eğitmen hesapları uygulamadan silinemez; eğitmenler silme talebini e-postayla iletir.</p>
+<h2>9. Yaş sınırı</h2>
+<p>Uygulama 18 yaşından büyükler içindir. İlk girişte 18 yaşından büyük olduğunu beyan edersin. 18 yaşından küçük birinin verisinin işlendiği fark edilirse veri silinir.</p>
 
-<h2>10. Değişiklikler</h2>
-<p>Bu metni güncellersek yeni hâlini bu sayfada, güncelleme tarihiyle yayınlarız. Uygulamadaki <b>Profil › Künye ve iletişim › Gizlilik ve KVKK</b> bağlantısı her zaman bu sayfanın güncel hâlini açar. Duyuru izni gibi rızana dayanan bir işlemin kapsamı değişirse rızanı yeniden isteriz.</p>
+<h2>10. Güvenlik ve değişiklikler</h2>
+<p>Veriler şifreli bağlantıyla (HTTPS/TLS) taşınır; sunucuda her kullanıcı yalnız kendi verisine, eğitmenler yalnız yetkili oldukları kayıtlara erişebilir. Verilerine yetkisiz biri erişirse durum en kısa sürede sana ve Kişisel Verileri Koruma Kurulu'na bildirilir.</p>
+<p>Bu metin değişirse uygulama yeni hâlini sana gösterir ve yeniden okuduğunu belirtmeni ister. Metnin web'deki kopyası: mode-akademi.github.io/gizlilik.</p>
+
+<h2 id="egitmenler">11. Eğitmenler için</h2>
+<p>Bu metin eğitmenler için de geçerlidir. Eğitmen olarak uygulamada şu verilerin işlenir: adın, Google hesabının e-posta adresi ve kimliği, profil resmin ya da kask avatarın, bildirim kimliğin (izin verirsen) ve uygulamada yaptığın işlemlerin kaydı: verdiğin ders davetleri, yoklamalar, puanlar, notlar, başvuru ve paket onayları, sıra ve önkoşul esnetmeleri (adın, tarih ve gerekçeyle), olay kayıtları ve aldığın yedekler.</p>
+<p>Amaç, eğitimin yürütülmesi ve kimin hangi kararı verdiğinin izlenebilmesidir; hukuki sebep kulüple aranızdaki ilişkinin ifası (m.5/2-c) ve verilen kararların hesap verebilirliğine ilişkin meşru menfaattir (m.5/2-f). Adın, verdiğin dersler ve kararlarla birlikte ilgili adaylara ve öteki eğitmenlere görünebilir. Yurt dışı aktarım, saklama ve hakların için yukarıdaki bölümler geçerlidir. Hesabının silinmesini <b>Profil › Hesap silme talebi</b> ile uygulamadan istersin; adayların devredildikten sonra hesabın en geç 30 gün içinde silinir. Başka talepler için yukarıdaki başvuru yolu geçerlidir.</p>
 
 <footer>M.O.D.E. Akademi · Dündar Pekiner, Türkiye · <a href="mailto:modeacademy35@gmail.com">modeacademy35@gmail.com</a> · <a href="kullanim-kosullari.html">Kullanım koşulları</a> · <a href="acik-riza.html">Açık rıza</a> · <a href="hesap-silme.html">Hesap silme</a></footer>
 </div></body>
